@@ -9,7 +9,7 @@ Scenario: Display list of games and select 1
 		  And I see "What is your name?"
 		  When I type "Kevin" and press Enter
 		  And I see "Hello, Kevin!"
-		  And I see "[1] Twister\n[2] Hearts\n[3] Checkers\n[4] Trouble\n[5] Global Theromonuclear War"
+		  And I see "[1] Twister\n[2] Hearts\n[3] Checkers\n[4] Trouble\n[5] Global Thermonuclear War"
 		  When I type "1" and press Enter
 		  Then I should see "Wrong game choice"
-		  And the program should quit 
+		  And the program should exit with status 0
