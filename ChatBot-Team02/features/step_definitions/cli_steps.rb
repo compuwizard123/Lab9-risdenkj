@@ -14,6 +14,6 @@ When /^I type "([^""]*)" and press Enter$/ do |text|
   type(text)
 end
 
-Then /^the program should exit with status (\d+)$/ do |exit_status|
-  @last_exit_status.should == exit_status.to_i
+Then /^the program should exit$/ do
+  @last_exit_status.should == nil
 end
